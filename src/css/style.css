@@ -1,0 +1,215 @@
+@media (max-width: 700px) {
+    .grid-adjustable-columns {
+        display: grid;
+        grid-auto-flow: row;
+    }
+}
+
+@media (min-width: 701px) {
+    .grid-adjustable-columns {
+        width: min(1000px, 75rem);
+        margin: 0 auto;
+        grid-auto-flow: column;
+        gap: 1em;
+    }
+}
+
+body {
+    display: grid;
+    height: 150vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    background-color: #2C3333;
+    text-align: center;
+    padding: 2em;
+    justify-content: space-between;
+}
+
+header a {
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+
+
+header .primary-menu ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    list-style-type: none;
+    margin: auto;
+}
+
+main .heroSection {
+    background-color: #395B64;
+    text-align: center;
+    padding: 4em;
+    display: flex;
+    justify-content: space-between;
+}
+
+main .heroSection div {
+    margin: auto;
+}
+
+main .heroSection .heroImg {
+    height: 250px;
+}
+
+main .heroSection .heroImg img {
+    width: 100%;
+    max-height: 100%;
+    border-radius: 10%;
+}
+
+main .heroSection .hero .btn button {
+    padding: 15px;
+    background-color: #2C3333;
+    color: #FFFFFF;
+}
+
+main .highlightsSection .highlights {
+    background-color: #395B64;
+    text-align: center;
+    padding: 2em;
+}
+
+main .highlightsSection .header {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+    padding: 0 2em 0 2em;
+}
+
+main .highlightsSection .header .viewMenu {
+    padding: 15px;
+    background-color: #2C3333;
+    color: #FFFFFF;
+}
+
+main .highlightsSection .highlights .card-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .highlightsSection .highlights .card-section .card {
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+    padding: 2em;
+}
+
+main .highlightsSection .highlights .card .card-image {
+    height: 250px;
+}
+
+main .highlightsSection .highlights .card .card-image img {
+    width: 100%;
+    max-height: 100%;
+    border-radius: 10%;
+}
+
+main .highlightsSection .highlights .card .card-body {
+    max-width: 100%;
+    text-align: center;
+}
+
+main .highlightsSection .highlights .card .card-body .card-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .highlightsSection .highlights .card .card-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .highlightsSection .highlights .card .card-footer p {
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+    padding: 2em;
+}
+
+main .testimonials {
+    background-color: #2C3333;
+    text-align: center;
+    padding: 4em;
+}
+
+main .testimonials .cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .testimonials .cards .cardProfile .cardContent {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .testimonials .cards .cardProfile .cardContent .cardImage {
+    height: 230px;
+    padding: 0 2em 0 2em;
+}
+
+main .testimonials .cards .cardProfile .cardContent .cardImage img {
+    width: 100%;
+    max-height: 100%;
+    border-radius: 10%;
+}
+
+main .aboutSection {
+    background-color: #395B64;
+    text-align: center;
+    padding: 4em;
+    display: flex;
+    justify-content: space-between;
+}
+
+main .aboutSection div {
+    margin: auto;
+}
+
+main .aboutSection .aboutImg {
+    height: 250px;
+}
+
+main .aboutSection .aboutImg img {
+    width: 100%;
+    max-height: 100%;
+    border-radius: 10%;
+}
+
+/* main .aboutSection .about .btn button {
+    padding: 15px;
+    background-color: #2C3333;
+    color: #FFFFFF;
+} */
+
+.footerSection .footerItems {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerSection .footerItems .footerMenu ul li {
+    list-style-type: none;
+    margin: auto;
+    text-decoration: none;
+}
+
+.footerSection .footerItems .footerMenu ul li a {
+    color: #2C3333;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #A5C9CA;
+    text-align: center;
+    padding: 2em;
+}

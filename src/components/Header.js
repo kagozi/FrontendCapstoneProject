@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import '../css/style.css';
 import logo from '../images/Logo.svg'
 const Header = () => {
@@ -7,39 +8,39 @@ const Header = () => {
       <nav class="primary-menu">
         <ul>
           <li>
-            <a href="#">
+            <Link to ="/">
               <img src={logo} alt="logo" />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link to ="/">
               <p>Home</p>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link to ="/about">
               <p>About</p>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link to ="/menu">
               <p>Menu</p>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link to ="/reservations">
               <p>Reservations</p>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link to ="/booking">
               <p>Order Online</p>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link to ="/">
               <p>Log in</p>
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

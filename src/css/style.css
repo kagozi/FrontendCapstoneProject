@@ -186,11 +186,95 @@ main .aboutSection .aboutImg img {
     border-radius: 10%;
 }
 
-/* main .aboutSection .about .btn button {
-    padding: 15px;
-    background-color: #2C3333;
-    color: #FFFFFF;
-} */
+.bookingForm {
+    color: #A5C9CA;
+    background-color: #395B64;
+    justify-content: center;
+    padding: 2em;
+}
+
+.bookingForm .secImg {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.bookingForm .secImg .images {
+    height: 250px;
+    width: auto;
+    margin-top: 10px;
+}
+
+.bookingForm .secImg .images img {
+    max-width: 100%;
+    height: 100%;
+    width: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+.bookingForm .dateTime {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.bookingForm .dateTime .dateD {
+    width: 50%;
+}
+
+.bookingForm .dateTime .dateT {
+    width: 50%;
+}
+
+.bookingForm .dateTime .dateD .date {
+    width: auto;
+}
+
+.bookingForm .dateTime .dateT .time {
+    width: auto;
+}
+
+.bookingForm .diners {
+    margin-top: 20px;
+}
+
+.bookingForm .diners .numDiners {
+    width: 50%;
+}
+
+.bookingForm .occasion {
+    margin-top: 20px;
+}
+
+.bookingForm .occasion .occasionType {
+    width: 50%;
+}
+
+.bookingForm .seating .options .standardOption {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bookingForm .seating .options .outsideOption {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bookingForm .Submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bookingForm .Submit .confirm {
+    background-color: yellow;
+    padding: 1em;
+    color: #2C3333;
+}
 
 .footerSection .footerItems {
     display: flex;

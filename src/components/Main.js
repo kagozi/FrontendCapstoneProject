@@ -5,8 +5,7 @@ import HomePage from "./Homepage";
 import Booking from "./Booking";
 
 const Main = () => {
-    return (
-        
+    return ( 
         <main>
             <Routes>
                 <Route path="/" element={<HomePage />} />

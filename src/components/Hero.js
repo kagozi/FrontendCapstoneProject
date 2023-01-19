@@ -1,21 +1,16 @@
-import restarauntfood from '../images/restaurantfood.jpg'
 const Hero = () => {
     return (
-        <section class="heroSection">
-            <div class="hero">
-                <h2>Little Lemon Menu</h2>
-                <h3>Chicago</h3>
-                <p>Lorem ipsum Lorem ipsum Lorem</p>
-                <p>Lorem ipsum Lorem ipsum Lorem</p>
-                <p>Lorem ipsum Lorem ipsum Lorem</p>
-                <div class="btn">
-                    <button>Reserve a Table</button>
-                </div>
-            </div>
-            <div class="heroImg">
-                <img src={restarauntfood} alt="Hero" />
-            </div>
-        </section>
+    <section class="banner" id="banner">
+      <div class="content">
+        <h2>Always Choose Good</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum cumque
+          alias nesciunt architecto quod vero, odio sunt quo. Eos soluta debitis
+          eveniet delectus rem.
+        </p>
+        <a href="#menu" class="btn">Our Menu</a>
+      </div>
+    </section>
     );
 }
 

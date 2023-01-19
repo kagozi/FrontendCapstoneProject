@@ -1,76 +1,78 @@
 import React from "react";
 import '../css/style.css'
-import restarauntfood from '../images/restaurantfood.jpg'
-
+import menu1 from '../images/menu1.jpg'
+import menu2 from '../images/menu2.jpg'
+import menu3 from '../images/menu3.jpg'
+import menu4 from '../images/menu4.jpg'
+import menu5 from '../images/menu5.jpg'
+import menu6 from '../images/menu6.jpg'
+import { Link, Routes } from "react-router-dom";
 const Highlights = () => {
     return (
-        <section class="highlightsSection">
-        <div class="highlights">
-          <div class="header">
-            <h4 class="menu-items">Specials</h4>
-            <button class="viewMenu">Online Menu</button>
+   <section class="menu" id="menu">
+      <div class="title">
+        <h2 class="titleText">Our <span>M</span>enu</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+      <div class="content">
+        <div class="box">
+          <div class="imgBx">
+            <img src={menu1} alt="menu salad" />
           </div>
-          <div class="card-section">
-            <div class="card">
-              <div class="card-image">
-                <img src={restarauntfood} alt="card" />
-              </div>
-              <div class="card-body">
-                <div class="card-info">
-                  <h4 class="item">Greek Salad</h4>
-                  <h4 class="price">$12.99</h4>
-                </div>
-                <p>
-                  Enjoy great deals on the best Greek salad recipe in this part
-                  of the hemisphere from as little as $12.99
-                </p>
-              </div>
-              <div class="card-footer">
-                <p>Order a delivery</p>
-                <p>Icon</p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-image">
-                <img src={restarauntfood} alt="card" />
-              </div>
-              <div class="card-body">
-                <div class="card-info">
-                  <h4 class="item">Greek Salad</h4>
-                  <h4 class="price">$12.99</h4>
-                </div>
-                <p>
-                  Enjoy great deals on the best Greek salad recipe in this part
-                  of the hemisphere from as little as $12.99
-                </p>
-              </div>
-              <div class="card-footer">
-                <p>Order a delivery</p>
-                <p>Icon</p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-image">
-                <img src={restarauntfood} alt="card" />
-              </div>
-              <div class="card-body">
-                <div class="card-info">
-                  <h4 class="item">Greek Salad</h4>
-                  <h4 class="price">$12.99</h4>
-                </div>
-                <p>
-                  Enjoy great deals on the best Greek salad recipe in this part
-                  of the hemisphere from as little as $12.99
-                </p>
-              </div>
-              <div class="card-footer">
-                <p>Order a delivery</p>
-                <p>Icon</p>
-              </div>
-            </div>
+          <div class="text">
+            <h3>Special Salads</h3>
           </div>
         </div>
-      </section>
+
+        <div class="box">
+          <div class="imgBx">
+            <img src={menu2} alt="menu soup" />
+          </div>
+          <div class="text">
+            <h3>Special Soup</h3>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="imgBx">
+            <img src={menu3} alt="menu pasta" />
+          </div>
+          <div class="text">
+            <h3>Special Pasta</h3>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="imgBx">
+            <img src={menu4} alt="menu salada 2" />
+          </div>
+          <div class="text">
+            <h3>Special Salads</h3>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="imgBx">
+            <img src={menu5} alt="menu soup 2" />
+          </div>
+          <div class="text">
+            <h3>Special Soup</h3>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="imgBx">
+            <img src={menu6} alt="menu pasta 2" />
+          </div>
+          <div class="text">
+            <h3>Special Pasta</h3>
+          </div>
+        </div>
+      </div>
+      <div class="title">
+        <Link to="#" class="btn">View All</Link>
+      </div>
+    </section>
     );
 };
 

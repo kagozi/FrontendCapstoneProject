@@ -6,71 +6,71 @@ import menu3 from '../images/menu3.jpg'
 import menu4 from '../images/menu4.jpg'
 import menu5 from '../images/menu5.jpg'
 import menu6 from '../images/menu6.jpg'
-import { Link, Routes } from "react-router-dom";
+import { Link} from "react-router-dom";
 const Highlights = () => {
     return (
-   <section class="menu" id="menu">
-      <div class="title">
-        <h2 class="titleText">Our <span>M</span>enu</h2>
+   <section className="menu" id="menu">
+      <div className="title">
+        <h2 className="titleText">Our <span>M</span>enu</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
       </div>
-      <div class="content">
-        <div class="box">
-          <div class="imgBx">
+      <div className="content">
+        <div className="box">
+          <div className="imgBx">
             <img src={menu1} alt="menu salad" />
           </div>
-          <div class="text">
+          <div className="text">
             <h3>Special Salads</h3>
           </div>
         </div>
 
-        <div class="box">
-          <div class="imgBx">
+        <div className="box">
+          <div className="imgBx">
             <img src={menu2} alt="menu soup" />
           </div>
-          <div class="text">
+          <div className="text">
             <h3>Special Soup</h3>
           </div>
         </div>
 
-        <div class="box">
-          <div class="imgBx">
+        <div className="box">
+          <div className="imgBx">
             <img src={menu3} alt="menu pasta" />
           </div>
-          <div class="text">
+          <div className="text">
             <h3>Special Pasta</h3>
           </div>
         </div>
 
-        <div class="box">
-          <div class="imgBx">
+        <div className="box">
+          <div className="imgBx">
             <img src={menu4} alt="menu salada 2" />
           </div>
-          <div class="text">
+          <div className="text">
             <h3>Special Salads</h3>
           </div>
         </div>
 
-        <div class="box">
-          <div class="imgBx">
+        <div className="box">
+          <div className="imgBx">
             <img src={menu5} alt="menu soup 2" />
           </div>
-          <div class="text">
+          <div className="text">
             <h3>Special Soup</h3>
           </div>
         </div>
 
-        <div class="box">
-          <div class="imgBx">
+        <div className="box">
+          <div className="imgBx">
             <img src={menu6} alt="menu pasta 2" />
           </div>
-          <div class="text">
+          <div className="text">
             <h3>Special Pasta</h3>
           </div>
         </div>
       </div>
-      <div class="title">
-        <Link to="#" class="btn">View All</Link>
+      <div className="title">
+        <Link to="#" className="btn">View All</Link>
       </div>
     </section>
     );

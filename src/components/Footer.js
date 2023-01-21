@@ -1,100 +1,101 @@
 import logo from '../images/Logo.svg'
+import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
-           <footer class="footerSection">
-      <div class="footerItems">
-        <div class="footerLogo">
-           <a href="#">
+           <footer className="footerSection">
+      <div className="footerItems">
+        <div className="footerLogo">
+           <Link  to="#">
               <img src={logo} alt="logo" />
-            </a>
+            </Link>
         </div>
-        <div class="footerMenu">
+        <div className="footerMenu">
           <h4>Doormat Navigation</h4>
            <ul>
             <li>
-            <a href="#">
+            <Link to="#">  
               <p>Home</p>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link to="#"> 
               <p>About</p>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link to="#"> 
               <p>Menu</p>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link to="#"> 
               <p>Reservations</p>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link to="#">
               <p>Order Online</p>
-            </a>
+            </Link>
           </li>
            </ul>
         </div>
-         <div class="footerMenu">
+         <div className="footerMenu">
           <h4>Customer Support</h4>
            <ul>
             <li>
-            <a href="#">
+            <Link to="#">
               <p>Log In</p>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link to="#">
               <p>Contact Us</p>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link to="#">
               <p>Claims</p>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link to="#">
               <p>Discounts</p>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link to="#">
               <p>Privacy Policy</p>
-            </a>
+            </Link>
           </li>
            </ul>
         </div>
-         <div class="footerMenu">
+         <div className="footerMenu">
           <h4>Social Media</h4>
            <ul>
             <li>
-            <a href="#">
+            <Link to="#">
               <p>Facebook</p>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link to="#">
               <p>Instagram</p>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link to="#">
               <p>Twitter</p>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link to="#">
               <p>Medium</p>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link to="#">
               <p>Reddit</p>
-            </a>
+            </Link>
           </li>
            </ul>
         </div>

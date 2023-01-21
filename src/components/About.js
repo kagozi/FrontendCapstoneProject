@@ -1,10 +1,10 @@
 import pizza from '../images/img1.jpg'
 const About = () => {
     return (
-  <section class="about" id="about">
-      <div class="row">
-        <div class="col50">
-          <h2 class="titleText"><span>A</span>bout Us</h2>
+  <section className="about" id="about">
+      <div className="row">
+        <div className="col50">
+          <h2 className="titleText"><span>A</span>bout Us</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
             minus animi, iure quae eaque iste magni. Id, enim adipisci!
@@ -21,8 +21,8 @@ const About = () => {
           </p>
         </div>
 
-        <div class="col50">
-          <div class="imgBx">
+        <div className="col50">
+          <div className="imgBx">
             <img src={pizza} alt="Pizza" />
           </div>
         </div>

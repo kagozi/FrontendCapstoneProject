@@ -45,26 +45,45 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+### Get started
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### `git clone https://github.com/kagozi/FrontendCapstoneProject.git`
 
-### Analyzing the Bundle Size
+### Install the dependencies 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#### `npm i`
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Start a development server
 
-### Advanced Configuration
+### `npm start`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+## IMPLEMENTED COMPONENTS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### LANDING PAGE
 
-### `npm run build` fails to minify
+**Home page: /**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![alt text](screenshots/littleLemonHome.png)
+
+
+### BOOKING COMPONENT
+
+**Implemeted to fetch data from an API endpoint `fetchAPI` and submit `formdata` to the endpoint `submitAPI` **
+
+![alt text](screenshots/bookingform.png)
+
+### FORM VALIDATION
+
+**Performs client side validation to prevent incomplete or errornous formData from being posted. It also displays warnings for each error field **
+
+![alt text](screenshots/formValidation.png)
+
+### BOOKING CONFIRMATION
+
+**Uses react.useNavigate() to redirect the user to a confirmation page once the validation check passes and the form submitted **
+
+![alt text](screenshots/confirmedBooking.png)
+
+

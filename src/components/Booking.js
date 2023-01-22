@@ -29,6 +29,7 @@ const navigate = useNavigate();
   const [timeError, setTimeError] = useState('');
   const [guestsError, setGuestsError] = useState('');
   const [occasionError, setOccasionError] = useState('');
+  const [sittingOptionError, setSittinOptionError] = useState('');
   // console.log(formData)
 const handleSubmit = async (event) => {
   event.preventDefault();
@@ -62,6 +63,13 @@ const handleSubmit = async (event) => {
       return;
     }
   setOccasionError('');
+   
+    if (!formData.sittingOption) {
+      setSittinOptionError('Sitting option is required');
+      console.log(occasionError);
+      return;
+    }
+  setSittinOptionError('');
   try {
     if (!submitAPI) return;
     
@@ -93,6 +101,7 @@ const handleSubmit = async (event) => {
               placeholder="Name"
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
             />
+            {nameError && <p className="error-msg">{nameError}</p>}
         </div>
         <div className="inputBox">
             <label>Choose date</label>
@@ -102,31 +111,37 @@ const handleSubmit = async (event) => {
               value={selectedDate.toISOString().slice(0, 10)}
               onChange={(e) => { updateTimes(e.target.value);  setFormData({ ...formData, date: e.target.value })}}
             />
+            {dateError && <p className="error-msg">{dateError}</p>}
         </div>
           <div className="inputBox">
           <label htmlFor="res-time">Choose time</label>
       <select name="time" value={formData.time} onChange={(e) => setFormData({ ...formData, time: e.target.value })}>
          <option value="">Select a time</option>
         {availableTimes.map(time => <option key={time} value={time}>{time}</option>)}
-       </select>
+            </select>
+            {timeError && <p className="error-msg">{timeError}</p>}
         </div>
         <div className="inputBox">
           <label htmlFor="guests">Number of guests</label>
-          <input type="number" placeholder="1" min="1" max="10" name="guests"  onChange={(e) => setFormData({ ...formData, guests: e.target.value })}/>
+            <input type="number" placeholder="1" min="1" max="10" name="guests" onChange={(e) => setFormData({ ...formData, guests: e.target.value })} />
+            {guestsError && <p className="error-msg">{guestsError}</p>}
         </div>
         <div className="inputBox">
-          <label htmlFor="occassion">Occassion</label>
-        <select name="occassion" value={formData.occassion} onChange={(e) => setFormData({ ...formData, occassion: e.target.value })}>
+          <label htmlFor="occassion">Occasion</label>
+            <select name="occassion" value={formData.occassion} onChange={(e) => setFormData({ ...formData, occassion: e.target.value })}>
+               <option value="">Select an Occasion</option>
               <option  value="birthday">Birthday</option>
             <option value="anniversary">Anniversary</option>
-        </select>
+            </select>
+            {occasionError && <p className="error-msg">{occasionError}</p>}
         </div>
         <div className="inputBox">
         <label htmlFor="sittingOptions">Sitting Options</label>
           <RadioGroup onChange={(e) => { setSitting(e.target.value); setFormData({ ...formData, sittingOption: e.target.value }) }} selected={sittingOption}>
             <RadioOption value="standard">Standard</RadioOption>
             <RadioOption value="outside">Outside</RadioOption>
-          </RadioGroup>
+            </RadioGroup>
+            {sittingOptionError && <p className="error-msg">{sittingOptionError}</p>}
         </div>
          <div className="inputBox">
           <input type="submit" value="Send" />

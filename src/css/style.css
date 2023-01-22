@@ -538,3 +538,6 @@ footer {
 .RadioGroup {
     display: -webkit-box;
 }
+.error-msg{
+    color: red;
+}
